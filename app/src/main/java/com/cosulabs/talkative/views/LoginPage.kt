@@ -34,8 +34,8 @@ class LoginPage : ComponentActivity() {
         Column (horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.SpaceEvenly, modifier = Modifier.fillMaxSize()){
             Column(verticalArrangement = Arrangement.Center, modifier = Modifier.height((
                 LocalConfiguration.current.screenHeightDp.dec() / 3).dp)) {
-                TextField(modifier = Modifier.padding(5.dp),value = "", onValueChange = {})
-                TextField(modifier = Modifier.padding(5.dp),value = "", onValueChange = {})
+                TextField(placeholder = {Text("Username:")},modifier = Modifier.padding(5.dp),value = "", onValueChange = {})
+                TextField(placeholder = {Text("Password:")},modifier = Modifier.padding(5.dp),value = "", onValueChange = {})
             }
             Row {
                 Button(onClick = {}) {
