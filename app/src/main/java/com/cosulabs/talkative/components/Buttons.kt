@@ -1,7 +1,10 @@
 package com.cosulabs.talkative.components
 
 import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.waterfallPadding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -26,13 +29,12 @@ class Buttons {
 @Preview
 @Composable
 fun LoginButton(
-    width : Dp = 150.dp,
-    height : Dp = 40.dp,
+    modifier: Modifier = Modifier.waterfallPadding(),
     onClick : () -> Unit = {},
     text: String = "Login"
 ){
 
-    ElevatedButton(modifier = Modifier.width(width).height(height = height),onClick = onClick, colors = ButtonDefaults.buttonColors(containerColor = Color.DarkGray)) {
+    ElevatedButton(modifier = modifier,onClick = onClick, colors = ButtonDefaults.buttonColors(containerColor = Color.DarkGray)) {
         Text(text)
     }
 }
