@@ -1,9 +1,20 @@
+import com.android.build.api.dsl.Packaging
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+
+
+
+
 }
 
+
+
 android {
+    packaging{
+        resources.excludes.add("META-INF/*")
+    }
     namespace = "com.cosulabs.talkative"
     compileSdk = 33
 
@@ -18,6 +29,7 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+        multiDexEnabled = true
     }
 
     buildTypes {
@@ -27,6 +39,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            multiDexEnabled = true
         }
     }
     compileOptions {
@@ -51,6 +64,8 @@ android {
 
 dependencies {
 
+    implementation("androidx.multidex:multidex:2.0.1")
+
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
     implementation("androidx.activity:activity-compose:1.7.0")
@@ -67,5 +82,10 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:1.2.2")
+
+
+    implementation("io.ktor:ktor-client-core:2.3.4")
+    implementation("io.ktor:ktor-client-cio:2.3.4")
 
 }
