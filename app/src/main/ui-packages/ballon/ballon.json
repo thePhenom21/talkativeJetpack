@@ -1,0 +1,213 @@
+{
+  "name": "ballon",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "sIJhshIBZwBBmlf8goTkq9",
+    "node": "2:248",
+    "version": "4132996288",
+    "component-id": "a00d6c03e5c32dee1c455ed248347322f03ca093"
+  },
+  "default": "ballon",
+  "documentation": "Chat balloon",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "chat ballon"
+      },
+      {
+        "type": "text",
+        "id": "Text"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 1"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 4"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 2"
+      }
+    ],
+    "modes": {
+      "ballon": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "chat ballon",
+              "Text",
+              "Ellipse 1",
+              "Ellipse 4",
+              "Ellipse 2"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "chat ballon",
+            "margin": {
+              "right": "35.0",
+              "bottom": "37.0"
+            },
+            "border-radius": "13.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "11.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-4.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "chat_ballon.svg"
+          },
+          {
+            "id": "Text",
+            "margin": {
+              "left": "104.0",
+              "top": "37.0",
+              "right": "139.0",
+              "bottom": "65.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$text",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "20.0",
+            "line-height": "1.5302273559570312",
+            "typeface": "Inter"
+          },
+          {
+            "id": "Ellipse 1",
+            "margin": {
+              "left": "270.0",
+              "top": "106.0",
+              "right": "22.0",
+              "bottom": "21.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "ellipse_1.svg"
+          },
+          {
+            "id": "Ellipse 4",
+            "margin": {
+              "left": "304.0",
+              "top": "137.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "ellipse_4.svg"
+          },
+          {
+            "id": "Ellipse 2",
+            "margin": {
+              "left": "291.0",
+              "top": "126.0",
+              "right": "10.0",
+              "bottom": "9.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "ellipse_2.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "ballon",
+      "size": {
+        "width": 326.0,
+        "height": 158.0
+      },
+      "parameters": {
+        "text": "Text"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

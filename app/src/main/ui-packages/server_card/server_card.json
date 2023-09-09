@@ -1,0 +1,44 @@
+{
+  "name": "server_card",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "sIJhshIBZwBBmlf8goTkq9",
+    "node": "2:678",
+    "version": "4132996288",
+    "component-id": "38adb505073fdbf58f056bed4e79eaf17809cb04"
+  },
+  "default": "ServerCard",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      }
+    ],
+    "modes": {
+      "ServerCard": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "clip-content": "false"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "ServerCard",
+      "size": {
+        "width": 291.0,
+        "height": 121.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

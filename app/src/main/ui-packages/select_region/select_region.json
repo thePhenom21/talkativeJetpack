@@ -1,0 +1,140 @@
+{
+  "name": "select_region",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "sIJhshIBZwBBmlf8goTkq9",
+    "node": "5:41",
+    "version": "4132996288",
+    "component-id": "c0f9a855b4c91cb0b3da1897e3589dc125828ff6"
+  },
+  "default": "selectRegion",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Button"
+      },
+      {
+        "type": "text",
+        "id": "text"
+      }
+    ],
+    "modes": {
+      "selectRegion": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Button",
+              "text"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Button",
+            "border-radius": "13.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "11.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-4.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "tap-handler": "$click",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "button.svg"
+          },
+          {
+            "id": "text",
+            "margin": {
+              "left": "24.0",
+              "top": "15.0",
+              "right": "230.0",
+              "bottom": "75.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$text",
+            "overflow": "visible",
+            "text-size": "20.0",
+            "line-height": "1.5302273559570312",
+            "typeface": "Inter"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "click": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "selectRegion",
+      "size": {
+        "width": 291.0,
+        "height": 121.0
+      },
+      "parameters": {
+        "text": "text"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

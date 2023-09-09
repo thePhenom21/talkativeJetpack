@@ -1,0 +1,114 @@
+{
+  "name": "select_server",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "sIJhshIBZwBBmlf8goTkq9",
+    "node": "1:37",
+    "version": "4132996288",
+    "component-id": "ab790084b88bd7285769210c4373c467cd168866"
+  },
+  "default": "select server",
+  "documentation": "Server Select Page",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 1"
+      },
+      {
+        "type": "adin_component",
+        "id": "selectRegion",
+        "key": "select_region"
+      },
+      {
+        "type": "adin_component",
+        "id": "selectRegion1",
+        "key": "select_region"
+      }
+    ],
+    "modes": {
+      "select server": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 1",
+              "selectRegion",
+              "selectRegion1"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.07975460122699377",
+              "value": "0.6392156862745098"
+            }
+          },
+          {
+            "id": "Rectangle 1",
+            "border-radius": "20.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "14.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "16.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "332.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "760.0"
+              }
+            },
+            "vector-content": "rectangle_1.svg"
+          },
+          {
+            "id": "selectRegion",
+            "margin": {
+              "left": "34.0",
+              "top": "70.0",
+              "right": "35.0",
+              "bottom": "609.0"
+            },
+            "text": "text"
+          },
+          {
+            "id": "selectRegion1",
+            "margin": {
+              "left": "34.0",
+              "top": "262.0",
+              "right": "35.0",
+              "bottom": "417.0"
+            },
+            "text": "text"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "select server",
+      "size": {
+        "width": 360.0,
+        "height": 800.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

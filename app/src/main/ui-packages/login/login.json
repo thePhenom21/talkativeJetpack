@@ -1,0 +1,209 @@
+{
+  "name": "login",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "sIJhshIBZwBBmlf8goTkq9",
+    "node": "1:36",
+    "version": "4132996288",
+    "component-id": "6377bd7af3e98b615ee4b28e3b92053a90bd9d58"
+  },
+  "default": "login",
+  "documentation": "Login Page",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Forgot password?"
+      },
+      {
+        "type": "adin_component",
+        "id": "LoginButton",
+        "key": "login_button"
+      },
+      {
+        "type": "adin_component",
+        "id": "LoginButton1",
+        "key": "login_button"
+      },
+      {
+        "type": "adin_component",
+        "id": "TextInput",
+        "key": "text_input"
+      },
+      {
+        "type": "adin_component",
+        "id": "TextInput1",
+        "key": "text_input"
+      }
+    ],
+    "modes": {
+      "login": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Forgot password?",
+              "LoginButton",
+              "LoginButton1",
+              "TextInput",
+              "TextInput1"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.07975460122699377",
+              "value": "0.6392156862745098"
+            }
+          },
+          {
+            "id": "Forgot password?",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "95.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "651.0"
+              }
+            },
+            "tap-handler": "$forgetTap",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Forgot password?",
+            "overflow": "visible",
+            "text-size": "20.0",
+            "line-height": "1.5302273559570312",
+            "typeface": "Inter"
+          },
+          {
+            "id": "LoginButton",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "89.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "412.0"
+              }
+            },
+            "title": "Login",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "181.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "58.0"
+              }
+            }
+          },
+          {
+            "id": "LoginButton1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "89.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "503.0"
+              }
+            },
+            "title": "Register",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "181.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "58.0"
+              }
+            }
+          },
+          {
+            "id": "TextInput",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "40.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "179.0"
+              }
+            },
+            "text": "Text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "277.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "52.0"
+              }
+            }
+          },
+          {
+            "id": "TextInput1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "40.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "264.0"
+              }
+            },
+            "text": "Text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "277.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "52.0"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "forgetTap": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "login",
+      "size": {
+        "width": 360.0,
+        "height": 800.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

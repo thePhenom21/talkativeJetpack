@@ -1,0 +1,286 @@
+{
+  "name": "chat",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "sIJhshIBZwBBmlf8goTkq9",
+    "node": "1:38",
+    "version": "4132996288",
+    "component-id": "addf416799089f1ea4c0ee71f56d70653de10c58"
+  },
+  "default": "chat",
+  "documentation": "Chat Page",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 1"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 8"
+      },
+      {
+        "type": "group",
+        "id": "🦆 icon \"location\""
+      },
+      {
+        "type": "adin_component",
+        "id": "TextInput",
+        "key": "text_input"
+      },
+      {
+        "type": "adin_component",
+        "id": "ballon",
+        "key": "ballon"
+      },
+      {
+        "type": "adin_component",
+        "id": "ballon1",
+        "key": "ballon"
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      }
+    ],
+    "modes": {
+      "chat": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 1",
+              "Rectangle 8",
+              "🦆 icon \"location\"",
+              "TextInput",
+              "ballon",
+              "ballon1"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.07975460122699377",
+              "value": "0.6392156862745098"
+            }
+          },
+          {
+            "id": "Rectangle 1",
+            "border-radius": "20.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "14.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "678.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "332.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "244.0"
+              }
+            },
+            "vector-content": "rectangle_1.svg"
+          },
+          {
+            "id": "Rectangle 8",
+            "border-radius": "20.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "14.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "15.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "332.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "642.0"
+              }
+            },
+            "vector-content": "rectangle_8.svg"
+          },
+          {
+            "id": "🦆 icon \"location\"",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "13.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "292.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "706.0"
+              }
+            },
+            "tap-handler": "$click",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "46.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "TextInput",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "36.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "710.0"
+              }
+            },
+            "text": "Text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "237.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "42.0"
+              }
+            }
+          },
+          {
+            "id": "ballon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "40.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "44.0"
+              }
+            },
+            "text": "Text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "298.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "136.0"
+              }
+            }
+          },
+          {
+            "id": "ballon1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "24.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "239.0"
+              }
+            },
+            "relative-transform": [
+              [
+                "-1.0",
+                "0.0",
+                "0.0"
+              ],
+              [
+                "0.0",
+                "1.0",
+                "0.0"
+              ]
+            ],
+            "text": "Text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "298.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "136.0"
+              }
+            }
+          },
+          {
+            "id": "Vector",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "click": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "chat",
+      "size": {
+        "width": 360.0,
+        "height": 800.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
