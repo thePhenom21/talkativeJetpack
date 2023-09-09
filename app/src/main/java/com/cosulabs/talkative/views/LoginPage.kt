@@ -38,6 +38,10 @@ fun LoginView(){
 
     var passwordController by remember { mutableStateOf(TextFieldValue()) }
 
+    var controlText by remember {
+        mutableStateOf("")
+    }
+
 
     Column(
         modifier = Modifier
@@ -56,5 +60,6 @@ fun LoginView(){
         OutlinedButton(onClick = {},modifier = Modifier.padding(top = 20.dp), colors = ButtonDefaults.outlinedButtonColors(containerColor = Color.LightGray, contentColor = Color.DarkGray)) {
             Text("Forgot Password?",)
         }
+        Text(text = controlText, modifier = Modifier.padding(top = 40.dp))
     }
 }
