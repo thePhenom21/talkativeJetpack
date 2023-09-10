@@ -1,6 +1,5 @@
 package com.cosulabs.talkative.views
 
-import android.annotation.SuppressLint
 import androidx.activity.ComponentActivity
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -23,20 +22,27 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.cosulabs.talkative.components.CustomTextField
 import com.cosulabs.talkative.components.LoginButton
 import com.cosulabs.talkative.util.BUTTON_WIDTH
-
-class LoginPage : ComponentActivity() {
-
-}
+import com.cosulabs.talkative.viewmodels.LoginPageViewModel
+import kotlinx.coroutines.runBlocking
 
 
 @Composable
 fun LoginView(){
-    var usernameController by remember { mutableStateOf(TextFieldValue()) }
 
-    var passwordController by remember { mutableStateOf(TextFieldValue()) }
+    val loginPageViewModel : LoginPageViewModel = viewModel()
+
+    var usernameController by remember {
+        mutableStateOf(TextFieldValue())
+    }
+
+    var passwordController by remember {
+        mutableStateOf(TextFieldValue())
+    }
+
 
     var controlText by remember {
         mutableStateOf("")
@@ -55,11 +61,26 @@ fun LoginView(){
             visualTransformation = PasswordVisualTransformation('*'),
             placeholder = {Text("Password: ", color = Color.White)},
             modifier = Modifier.padding(bottom = 30.dp), value = passwordController, onValueChange = {passwordController = it})
-        LoginButton(text = "Login", modifier = Modifier.width(BUTTON_WIDTH))
-        LoginButton(text = "Register",modifier = Modifier.width(BUTTON_WIDTH))
+        LoginButton(text = "Login", modifier = Modifier.width(BUTTON_WIDTH), onClick = {
+            runBlocking {
+                login(usernameController.text,passwordController.text,loginPageViewModel)
+            }
+            })
+        LoginButton(text = "Register",modifier = Modifier.width(BUTTON_WIDTH), onClick = { runBlocking {
+            register(usernameController.text,passwordController.text,loginPageViewModel)
+        } })
         OutlinedButton(onClick = {},modifier = Modifier.padding(top = 20.dp), colors = ButtonDefaults.outlinedButtonColors(containerColor = Color.LightGray, contentColor = Color.DarkGray)) {
             Text("Forgot Password?",)
         }
         Text(text = controlText, modifier = Modifier.padding(top = 40.dp))
     }
+}
+
+suspend fun login(username: String, password: String, loginPageViewModel: LoginPageViewModel){
+    loginPageViewModel.login(username,password)
+}
+
+
+suspend fun register(username: String, password: String, loginPageViewModel: LoginPageViewModel){
+    loginPageViewModel.register(username,password)
 }
